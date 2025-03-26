@@ -46,7 +46,7 @@ app.patch('/products/:id/status',(req, res)=>{
     if( productIndex === -1){
         return res.status(404).send();
     }
-    products[productIndex] = { ...products[productIndex],  status };
+    products[productIndex] = { ...products[productIndex],   status };
 
     res.status(200).json(products).send();
 });
